@@ -83,7 +83,7 @@ const Formulario = () => {
                      {error ? (
                         <Error
                            //
-                           mensaje='Los campos son obligatorios'
+                           mensaje='Todos los campos son obligatorios'
                         />
                      ) : null}
                   </fieldset>
