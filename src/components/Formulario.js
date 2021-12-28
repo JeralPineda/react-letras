@@ -29,6 +29,12 @@ const Formulario = ({ setBusquedaLetra }) => {
 
       // Enviar la búsqueda al componente principal
       setBusquedaLetra(busqueda);
+
+      //   Limpiamos el formulario
+      setBusqueda({
+         artista: '',
+         cancion: '',
+      });
    };
 
    return (
