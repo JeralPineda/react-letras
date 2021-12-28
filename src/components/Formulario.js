@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Error from './Error';
 
-const Formulario = () => {
+const Formulario = ({ setBusquedaLetra }) => {
    const [busqueda, setBusqueda] = useState({
       artista: '',
       cancion: '',
@@ -26,6 +26,9 @@ const Formulario = () => {
          return;
       }
       setError(false);
+
+      // Enviar la búsqueda al componente principal
+      setBusquedaLetra(busqueda);
    };
 
    return (
