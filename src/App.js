@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Formulario from './components/Formulario';
 import Cancion from './components/Cancion';
+import Info from './components/Info';
 
 function App() {
    const [busquedaLetra, setBusquedaLetra] = useState({});
@@ -33,7 +34,9 @@ function App() {
 
          <div className='container mt-5'>
             <div className='row'>
-               <div className='col-md-6'></div>
+               <div className='col-md-6'>
+                  <Info info={info} />
+               </div>
 
                <div className='col-md-6'>
                   <Cancion letra={letra} />
